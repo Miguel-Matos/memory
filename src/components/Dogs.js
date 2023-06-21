@@ -11,7 +11,7 @@ import dog8 from '../img/dog8.jpg'
 import dog9 from '../img/dog9.jpg'
 
 export default function Dog() {
-  const [dogs, setDogs] = useState([{dog: dog1, id: 1}, {dog: dog2, id: 2}, {dog: dog3, id: 3}, {dog: dog4, id: 4}, {dog: dog5, id: 5}, {dog: dog6, id: 6}, {dog: dog7, id: 7}, {dog: dog8, id: 8}, {dog: dog9, id: 9}]);
+  const [dogs, setDogs] = useState([{dog: dog1, id: 1}, {dog: dog2, id: 2}, {dog: dog3, id: 3}, {dog: dog4, id: 4}, {dog: dog5, id: 5}, {dog: dog7, id: 7}, {dog: dog8, id: 8}, {dog: dog9, id: 9}]);
 
     function shuffleDogs()  {
       const shuffledDogs = [...dogs]
