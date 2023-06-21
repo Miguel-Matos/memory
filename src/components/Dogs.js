@@ -10,6 +10,8 @@ import dog7 from '../img/dog7.jpg'
 import dog8 from '../img/dog8.jpg'
 import dog9 from '../img/dog9.jpg'
 
+import Count from '../components/Count';
+
 export default function Dog() {
   const [dogs, setDogs] = useState([{dog: dog1, id: 1}, {dog: dog2, id: 2}, {dog: dog3, id: 3}, {dog: dog4, id: 4}, {dog: dog5, id: 5}, {dog: dog7, id: 7}, {dog: dog8, id: 8}, {dog: dog9, id: 9}]);
 
@@ -28,6 +30,10 @@ export default function Dog() {
 
   const dogMap = dogs.map(dog => <img onClick={shuffleDogs} className='dog' key={dog.id} src={dog.dog} alt='dog' />)
   return(
-    <div id='dogContainer'>{dogMap}</div>
+    <div>
+      <Count />
+      <div id='dogContainer'>{dogMap}</div>
+    </div>
+
   )
 }
