@@ -1,13 +1,11 @@
 import { useState } from "react";
 
-export default function Count() {
-  const [score, setScore] = useState(0);
-  const [high, setHigh] = useState(0);
+export default function Count(props) {
 
   return(
     <div className="score">
-      <p>Score: {score}</p>
-      <p>High Score: {high}</p>
+      <p>Score: {props.score}</p>
+      <p>High Score: {props.high}</p>
     </div>
   )
 }
